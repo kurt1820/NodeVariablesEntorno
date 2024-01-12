@@ -10,7 +10,6 @@ app.get('/listar-env', (req, res) => {
 
   
 app.get('*', (req, res) => {
-    // Envia todas las variables de entorno como respuesta
     res.json("Hola");
   });
 
