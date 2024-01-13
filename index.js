@@ -3,14 +3,14 @@ const app = express();
 const port = 3000; // Puedes cambiar el puerto según tus necesidades
 
 
-app.get('/listar-env', (req, res) => {
+app.get('/listar-env', async (req, res) => {
     // Envia todas las variables de entorno como respuesta
     res.json(process.env);
   });
 
   
-app.get('*', (req, res) => {
-    res.json("Hola");
+app.get('*', async (req, res) => {
+    res.json("Hola kurt");
   });
 
   
